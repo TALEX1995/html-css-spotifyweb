@@ -29,6 +29,13 @@
     display: flex;
 }
 
+.container {
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+    background-color: #141922;
+}
+
 /* GENERIC */
 
 body {
@@ -46,22 +53,6 @@ footer {
     background-color: #282828;
 }
 
-.container {
-    height: 100%;
-    overflow: auto;
-    width: 100%;
-    background-color: #141922;
-}
-
-header {
-    position: sticky;
-    right: 0;
-    top: 0;
-    left: 0;
-    height: 80px;
-    background-color: blue;
-    width: 100%;
-}
 
 main {
     height: 100%;
@@ -90,8 +81,11 @@ section {
     margin: var(--size-0-5rem);
 }
 
-.main-app p {
-    padding-top: var(--size-0-5rem);
+
+
+a {
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /* SIDEBAR */
@@ -112,9 +106,33 @@ section {
 
 /* HEADER */
 
+header {
+    position: sticky;
+    right: 0;
+    top: 0;
+    left: 0;
+    height: 80px;
+    background-color: rgba(8, 11, 18, 0.5);
+    width: 100%;
+}
 
+.main-header .flex {
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    margin-right: var(--size-2rem);
+}
 
+.main-header a {
+    padding: var(--size-0-75rem) var(--size-1-5rem);
+    color: white;
+    border: 1px solid white;
+    border-radius: var(--size-3rem);
+}
 
+.main-header a:hover {
+    transform: scale(1.2);
+}
 
 
 /* MAIN Nav-bar*/
@@ -131,7 +149,6 @@ section {
 
 .nav-bar a {
     color: var(--color-gray);
-    text-decoration: none;
     font-size: var(--size-0-75rem);
     font-weight: bold;
 }
@@ -145,7 +162,9 @@ section {
 
 /* Main Section create-for */
 
-
+.main-app p {
+    padding-top: var(--size-0-5rem);
+}
 
 
 
