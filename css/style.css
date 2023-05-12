@@ -5,3 +5,80 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+
+/* CUSTOM PROPERTIES */
+
+
+
+/* UTILITIES */
+
+.flex {
+    display: flex;
+}
+
+
+/* GENERIC */
+
+.main-app {
+    max-width: 100%;
+    height: calc(100vh - 80px);
+}
+
+footer {
+    height: 80px;
+    background-color: #282828;
+}
+
+.container {
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+    background-color: yellow;
+}
+
+header {
+    position: sticky;
+    right: 0;
+    top: 0;
+    left: 0;
+    height: 80px;
+    background-color: blue;
+    width: 100%;
+}
+
+main {
+    height: 100%;
+    background-color: yellow;
+    width: 100%;
+}
+
+/* SIDEBAR */
+
+.sidebar-phone {
+    width: 50px;
+    background-color: black;
+    height: 100%;
+}
+
+.sidebar-tablet {
+    width: 250px;
+    background-color: black;
+    height: 100%;
+    display: none;
+}
+
+
+/* MEDIA QUERY */
+
+@media screen and (min-width: 640px) {
+    .sidebar-tablet {
+        display: block;
+    }
+
+    .sidebar-phone {
+        display: none;
+    }
+
+
+}
