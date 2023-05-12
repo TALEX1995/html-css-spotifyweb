@@ -9,7 +9,19 @@
 
 /* CUSTOM PROPERTIES */
 
-
+:root {
+    --color-gray: #7d7f84;
+    --font-size-0-5rem: 0.5rem;
+    --font-size-0-75rem: 0.75rem;
+    --font-size-1rem: 1rem;
+    --font-size-1-25rem: 1.25rem;
+    --font-size-1-5rem: 1.5rem;
+    --font-size-2rem: 2rem;
+    --font-size-2-5rem: 2.5rem;
+    --font-size-3rem: 3rem;
+    --font-size-3-5rem: 3.5rem;
+    --font-size-4rem: 3.5rem;
+}
 
 /* UTILITIES */
 
@@ -19,6 +31,11 @@
 
 
 /* GENERIC */
+
+body {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
 
 .main-app {
     max-width: 100%;
@@ -34,7 +51,6 @@ footer {
     height: 100%;
     overflow: auto;
     width: 100%;
-    background-color: yellow;
 }
 
 header {
@@ -49,8 +65,12 @@ header {
 
 main {
     height: 100%;
-    background-color: yellow;
+    background-color: #141922;
     width: 100%;
+}
+
+ul {
+    list-style-type: none;
 }
 
 /* SIDEBAR */
@@ -67,6 +87,34 @@ main {
     height: 100%;
     display: none;
 }
+
+
+/* HEADER */
+
+
+
+
+
+
+/* MAIN */
+
+.nav-bar ul {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav-bar li {
+    margin: var(--font-size-1-5rem) var(--font-size-1-5rem);
+}
+
+.nav-bar a {
+    color: var(--color-gray);
+    text-decoration: none;
+    font-size: var(--font-size-0-75rem);
+    font-weight: bold;
+}
+
+
 
 
 /* MEDIA QUERY */
