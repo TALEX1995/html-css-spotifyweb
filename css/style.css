@@ -11,16 +11,16 @@
 
 :root {
     --color-gray: #7d7f84;
-    --font-size-0-5rem: 0.5rem;
-    --font-size-0-75rem: 0.75rem;
-    --font-size-1rem: 1rem;
-    --font-size-1-25rem: 1.25rem;
-    --font-size-1-5rem: 1.5rem;
-    --font-size-2rem: 2rem;
-    --font-size-2-5rem: 2.5rem;
-    --font-size-3rem: 3rem;
-    --font-size-3-5rem: 3.5rem;
-    --font-size-4rem: 3.5rem;
+    --size-0-5rem: 0.5rem;
+    --size-0-75rem: 0.75rem;
+    --size-1rem: 1rem;
+    --size-1-25rem: 1.25rem;
+    --size-1-5rem: 1.5rem;
+    --size-2rem: 2rem;
+    --size-2-5rem: 2.5rem;
+    --size-3rem: 3rem;
+    --size-3-5rem: 3.5rem;
+    --size-4rem: 3.5rem;
 }
 
 /* UTILITIES */
@@ -28,7 +28,6 @@
 .flex {
     display: flex;
 }
-
 
 /* GENERIC */
 
@@ -74,12 +73,12 @@ ul {
 }
 
 section {
-    padding-left: var(--font-size-1rem);
-    padding-right: var(--font-size-1rem);
+    padding-left: var(--size-1rem);
+    padding-right: var(--size-1rem);
 }
 
 .row {
-    margin: -0.5rem;
+    margin: var(--size-1-5rem) -0.5rem;
 }
 
 
@@ -88,7 +87,11 @@ section {
     background-color: yellow;
     width: calc(50% - 1rem);
     border: 1px solid black;
-    margin: var(--font-size-0-5rem);
+    margin: var(--size-0-5rem);
+}
+
+.main-app p {
+    padding-top: var(--size-0-5rem);
 }
 
 /* SIDEBAR */
@@ -119,16 +122,17 @@ section {
 .nav-bar ul {
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: var(--size-1rem);
 }
 
 .nav-bar li {
-    margin: var(--font-size-1-5rem) var(--font-size-1-5rem);
+    margin: var(--size-1-5rem) var(--size-1-5rem);
 }
 
 .nav-bar a {
     color: var(--color-gray);
     text-decoration: none;
-    font-size: var(--font-size-0-75rem);
+    font-size: var(--size-0-75rem);
     font-weight: bold;
 }
 
@@ -141,10 +145,11 @@ section {
 
 /* Main Section create-for */
 
-/* #create-for .card {
-    min-height: 200px;
-} */
 
+
+
+
+/* Main Section artists */
 
 
 
