@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Web-app Main-Content -->
     <div class="main-app flex">
-        <div class="sidebar-phone flex">
+        <!-- Sidebar phone < width 640px-->
+        <div class="sidebar-phone flex-column">
             <div class="sidebar-phone-upper">
                 <a href="#">
                     <img src="img/logo-small.svg" alt="spotify-icon">
@@ -30,14 +32,38 @@
 
             <div class="sidebar-phone-bottom">
                 <a href="#">
-                    <img id="download" src="img/download.svg" alt="download">
+                    <img class="download" src="img/download.svg" alt="download">
                 </a>
                 <a href="#">
                     <img src="img/profile.svg" alt="profile">
                 </a>
             </div>
         </div>
-        <div class="sidebar-tablet"></div>
+        <!-- Sidebar Tablet > width 640px -->
+        <div class="sidebar-tablet flex-column">
+            <div class="sidebar-tablet-upper">
+                <img id="logo-large" src="img/logo.svg" alt="logo">
+                <div class="sidebar-nav-bar">
+                    <div class="flex">
+                        <img src="img/home.svg" alt="home">
+                        <span class="white-text">Home</span>
+                    </div>
+                    <div class="flex">
+                        <img src="img/search.svg" alt="search">
+                        <span>Cerca</span>
+                    </div>
+                    <div class="flex">
+                        <img src="img/libreria.svg" alt="libreria">
+                        <span>La tua libreria</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-tablet-bottom">
+
+            </div>
+
+        </div>
         <div class="container">
             <header class="main-header">
                 <div class="flex">
@@ -86,6 +112,7 @@
         </div>
     
     </div>
+    <!-- Footer -->
     <footer class="current-song">
 
     </footer>

@@ -36,6 +36,15 @@
     background-color: #141922;
 }
 
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.white-text {
+    color: white;
+}
+
 
 /* GENERIC */
 
@@ -98,7 +107,6 @@ a {
 .sidebar-phone {
     width: 50px;
     background-color: black;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
@@ -123,13 +131,9 @@ a {
     margin-top: var(--size-1rem);
 }
 
-#download {
+.download {
     transform: scale(0.7);
 }
-
-
-
-
 
 
 /* SIDEBAR TABLET */
@@ -139,6 +143,35 @@ a {
     background-color: black;
     display: none;
 }
+
+.sidebar-tablet {
+    padding: 0 var(--size-1rem);
+    color: grey;
+}
+
+#logo-large {
+    max-width: 80%;
+    margin-top: var(--size-1rem);
+    margin-bottom: var(--size-1-5rem);
+}
+
+.sidebar-nav-bar img{
+    max-width: 25px;
+    height: auto;
+}
+
+.sidebar-nav-bar .flex {
+    align-items: center;
+    margin-bottom: var(--size-1rem);
+}
+
+.sidebar-nav-bar .flex span {
+    padding-left: 5px;
+}
+
+
+
+
 
 
 /* HEADER */
