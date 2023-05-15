@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' integrity='sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==' crossorigin='anonymous'/>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -40,27 +41,52 @@
             </div>
         </div>
         <!-- Sidebar Tablet > width 640px -->
-        <div class="sidebar-tablet flex-column">
-            <div class="sidebar-tablet-upper">
-                <img id="logo-large" src="img/logo.svg" alt="logo">
-                <div class="sidebar-nav-bar">
-                    <div class="flex">
-                        <img src="img/home.svg" alt="home">
-                        <span class="white-text">Home</span>
+        <div class="sidebar-tablet">
+            <div class="flex-column">
+                <div class="sidebar-tablet-upper">
+                    <img id="logo-large" src="img/logo.svg" alt="logo">
+                    <div class="sidebar-nav-bar">
+                        <div class="flex">
+                            <img src="img/home.svg" alt="home">
+                            <span class="white-text">Home</span>
+                        </div>
+                        <div class="flex">
+                            <img src="img/search.svg" alt="search">
+                            <span>Cerca</span>
+                        </div>
+                        <div class="flex">
+                            <img src="img/libreria.svg" alt="libreria">
+                            <span>La tua libreria</span>
+                        </div>
                     </div>
-                    <div class="flex">
-                        <img src="img/search.svg" alt="search">
-                        <span>Cerca</span>
-                    </div>
-                    <div class="flex">
-                        <img src="img/libreria.svg" alt="libreria">
-                        <span>La tua libreria</span>
+                    <div class="playlist">
+                        <h3 class="white-text">PLAYLIST</h3>
+                        <div class="flex">
+                            <i class="fa-solid fa-square-plus fa-3x"></i>
+                            <span>Crea Playlist</span>
+                        </div>
+                        <ul class="flex-column">
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
 
-            <div class="sidebar-tablet-bottom">
-
+                <div class="sidebar-tablet-bottom">
+                    <div class="flex">
+                        <img class="download" src="img/download.svg" alt="download">
+                        <span>Installa app</span>
+                    </div>
+                    <div class="flex">
+                        <img src="img/profile.svg" alt="profile">
+                        <span class="white-text">John Doe</span>
+                    </div>
+                </div>
             </div>
 
         </div>
