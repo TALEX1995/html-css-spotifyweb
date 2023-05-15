@@ -123,18 +123,9 @@ a {
     margin-top: var(--size-1rem);
 }
 
-.sidebar-phone img {
-    filter: invert(72%) sepia(1%) saturate(2636%) hue-rotate(328deg) brightness(300%) contrast(82%);
-}
-
-.sidebar-phone-upper .logo {
-    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(353deg) brightness(98%) contrast(102%);
-}
-
 #download {
     transform: scale(0.7);
 }
-
 
 
 
