@@ -144,7 +144,7 @@ a {
 
 .sidebar-tablet {
     padding: 0 var(--size-1rem);
-    color: grey;
+    color: var(--color-gray);
 }
 
 #logo-large {
@@ -199,6 +199,10 @@ a {
 
 .sidebar-tablet .flex {
     align-items: center;
+}
+
+.sidebar-tablet a {
+    color: var(--color-gray);
 }
 
 
