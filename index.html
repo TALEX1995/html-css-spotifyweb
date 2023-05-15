@@ -12,7 +12,31 @@
 </head>
 <body>
     <div class="main-app flex">
-        <div class="sidebar-phone"></div>
+        <div class="sidebar-phone flex">
+            <div class="sidebar-phone-upper">
+                <a href="#">
+                    <img class="logo" src="img/logo-small.svg" alt="spotify-icon">
+                </a>
+                <a href="#">
+                    <img src="img/home.svg" alt="home">
+                </a>
+                <a href="#">
+                    <img src="img/search.svg" alt="search">
+                </a>
+                <a href="#">
+                    <img src="img/libreria.svg" alt="libreria">
+                </a>
+            </div>
+
+            <div class="sidebar-phone-bottom">
+                <a href="#">
+                    <img id="download" src="img/download.svg" alt="download">
+                </a>
+                <a id="profile" href="#">
+                    <img  src="img/profile.svg" alt="profile">
+                </a>
+            </div>
+        </div>
         <div class="sidebar-tablet"></div>
         <div class="container">
             <header class="main-header">
@@ -23,7 +47,7 @@
             <main>
                 <div class="nav-bar">
                     <ul class="flex">
-                        <li><a href="#">IN EVIDENZA</a></li>
+                        <li><a href="#">IN E<span class="underline-bottom">VIDE</span>NZA</a></li>
                         <li><a href="#">PODCAST</a></li>
                         <li><a href="#">CLASSIFICHE</a></li>
                         <li><a href="#">GENERI E MOOD</a></li>

@@ -36,6 +36,7 @@
     background-color: #141922;
 }
 
+
 /* GENERIC */
 
 body {
@@ -81,6 +82,10 @@ section {
     margin: var(--size-0-5rem);
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
 
 
 a {
@@ -88,18 +93,59 @@ a {
     cursor: pointer;
 }
 
-/* SIDEBAR */
+/* SIDEBAR PHONE*/
 
 .sidebar-phone {
     width: 50px;
     background-color: black;
-    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.sidebar-phone-upper, .sidebar-phone-bottom {
+    width: 50%;
+}
+
+.sidebar-phone-upper {
+    margin-top: var(--size-0-5rem);
+}
+
+.sidebar-phone-bottom {
+    margin-bottom: var(--size-0-5rem);
+}
+
+.sidebar-phone-upper img {
+    margin-bottom: var(--size-1rem);
+}
+
+.sidebar-phone-bottom img {
+    margin-top: var(--size-1rem);
+}
+
+.sidebar-phone img {
+    filter: invert(72%) sepia(1%) saturate(2636%) hue-rotate(328deg) brightness(300%) contrast(82%);
+}
+
+.sidebar-phone-upper .logo {
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(353deg) brightness(98%) contrast(102%);
+}
+
+#download {
+    transform: scale(0.7);
+}
+
+
+
+
+
+
+
+/* SIDEBAR TABLET */
 
 .sidebar-tablet {
     width: 250px;
     background-color: black;
-    height: 100%;
     display: none;
 }
 
@@ -151,6 +197,10 @@ header {
     color: var(--color-gray);
     font-size: var(--size-0-75rem);
     font-weight: bold;
+}
+
+.nav-bar .underline-bottom {
+    border-bottom: 2px solid #5d8728;
 }
 
 /* Main Section recently-played */
