@@ -56,6 +56,7 @@ body {
 .main-app {
     max-width: 100%;
     height: calc(100vh - 80px);
+    background-color: black;
 }
 
 footer {
@@ -84,10 +85,7 @@ section {
 
 
 .card {
-    min-height: 200px;
-    background-color: yellow;
     width: calc(50% - 1rem);
-    border: 1px solid black;
     margin: var(--size-0-5rem);
 }
 
@@ -190,7 +188,7 @@ a {
 }
 
 .sidebar-tablet-bottom div:first-child {
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid var(--color-gray);
     margin-bottom: var(--size-1rem);
 }
 
@@ -259,15 +257,40 @@ header {
 
 /* Main Section recently-played */
 
-
 #recently-played .flex {
     flex-wrap: wrap;
 }
 
+.recently-played h4 {
+    font-weight: bold;
+}
+
+.card h4 {
+    text-align: center;
+    margin-top: var(--size-1rem);
+}
+
+.card span {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-top: var(--size-0-5rem);
+    color: var(--color-gray);
+}
+
 /* Main Section create-for */
 
-.main-app p {
+section p {
     padding-top: var(--size-0-5rem);
+    color: var(--color-gray);
+}
+
+.artists {
+    padding-bottom: var(--size-1-5rem);
+}
+
+.artists img {
+    border-radius: 50%;
 }
 
 
