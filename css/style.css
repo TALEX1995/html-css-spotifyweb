@@ -289,6 +289,9 @@ section p {
     color: var(--color-gray);
 }
 
+
+/* Main Section artists */
+
 .artists {
     padding-bottom: var(--size-1-5rem);
 }
@@ -298,10 +301,118 @@ section p {
 }
 
 
+/* FOOTER LEFT*/
 
-/* Main Section artists */
+.current-song {
+    align-items: center;
+    justify-content: space-between;
+}
 
 
+.current-song-name * {
+    font-size: var(--size-0-75rem);
+}
+
+.footer-left-side {
+    align-items: center;
+    height: 100%;
+    margin-left: var(--size-0-5rem);
+    width: 25%;
+}
+
+.footer-left-side img {
+    width: 35px;
+}
+
+.footer-left-side span {
+    color: var(--color-gray);
+}
+
+.footer-left-side .fa-heart, .footer-left-side .fa-folder {
+    color: var(--color-gray);
+}
+
+.fa-heart {
+    margin-bottom: 5px;
+}
+
+.footer-left-side .flex-column {
+    margin: var(--size-1rem);
+}
+
+.footer-left-side .current-song-name  {
+    margin-left: var(--size-0-5rem);
+}
+
+
+/* FOOTER CENTER */
+
+.footer-center {
+    width: 40%;
+    justify-content: center;
+}
+
+.footer-center-upper {
+    justify-content: space-between;
+}
+
+.footer-center-upper .fa-circle-play {
+    transform: scale(1.5);
+}
+
+.footer-center-bottom {
+    align-items: center;
+    margin-top: 10px;
+}
+
+.bar-time-song {
+    width: 100%;
+    background-color: var(--color-gray);
+    margin: 0 var(--size-0-5rem);
+    height: 4px;
+    border-radius: 2px; 
+}
+
+.bar-real-time-song {
+    width: 15%;
+    background-color: #c1c1c1;
+    height: 100%;
+}
+
+.current-song-name span + span {
+    display: block;
+}
+
+/* FOOTER RIGHT */
+
+.footer-right-side {
+    align-items: center;
+    margin-left: var(--size-1rem);
+    width: 25%;
+    justify-content: flex-end;
+}
+
+.footer-right-side i {
+    transform: scale(0.8);
+}
+
+.fa-display {
+    padding: 0 var(--size-0-5rem);
+}
+
+.volume {
+    width: 100%;
+    height: 4px;
+    background-color: var(--color-gray);
+    margin: 0 var(--size-0-5rem);
+    max-width: 150px;
+}
+
+.volume-real-time {
+    width: 30%;
+    background-color: #c1c1c1;
+    height: 100%;
+}
 
 
 /* MEDIA QUERY */
@@ -315,7 +426,14 @@ section p {
         display: none;
     }
 
+    .footer-center-upper {
+        justify-content: center;
+        gap: 50px;
+    }
 
+    .current-song-name span + span {
+        display: inline;
+    }
 }
 
 
