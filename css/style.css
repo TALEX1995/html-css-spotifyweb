@@ -89,6 +89,10 @@ section {
     margin: var(--size-0-5rem);
 }
 
+.play-hover .fa-circle-play {
+    display: none;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -305,6 +309,10 @@ section p {
     border-radius: 50%;
 }
 
+.point-hover {
+    display: none;
+}
+
 
 /* FOOTER LEFT*/
 
@@ -433,7 +441,7 @@ section p {
 
     .footer-center-upper {
         justify-content: center;
-        gap: 50px;
+        gap: 40px;
     }
 
     .current-song-name span + span {
@@ -455,6 +463,56 @@ section p {
     .card {
         width: calc(100% / 6 - 1rem);
     }
+
+    .card .play-hover {
+        position: relative;
+    }
+
+   .play-hover .fa-circle-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   }
+
+   .card:hover .fa-circle-play {
+    display: block;
+   }
+
+    .card:hover img {
+        opacity: 0.7;
+    }
+
+    .nav-bar ul li a:hover {
+        color: white;
+    }
+
+    /* POINT HOVER TIME SONG */
+
+    .bar-real-time-song, 
+    .volume-real-time {
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .point-hover {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: blue;
+        transform: translateX(50%);
+    }
+
+    .bar-time-song:hover .point-hover,
+    .volume:hover .point-hover {
+        display: block;
+    }
+
+    /* HOVER PLAY FOOTER */
+
+    .footer-center-upper .fa-circle-play:hover {
+        transform: scale(2.3);
+    }
 }
 
 
@@ -465,6 +523,9 @@ section p {
     overflow: auto;
     max-height: 40vh;
 }
+
+
+
 
 
 
